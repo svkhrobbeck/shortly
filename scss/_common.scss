@@ -1,8 +1,13 @@
 /* CUSTOM PROPS */
 :root {
   --primary-bg-color: #fff;
-  --text-color: #000;
-  --accent-color: ;
+  --text-color: #9e9aa8;
+  --text-dark: #34313d;
+  --accent-color: #2bd0d0;
+  --accent-color-hover: #9ae3e3;
+  --error-color: #f46363;
+  --light-bg: #eff1f7;
+  --dark-bg: #232127;
 }
 
 /* GLOBAL */
@@ -39,37 +44,13 @@ img {
 body {
   height: 100%;
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
-}
-
-/* SCROLL BAR */
-::-webkit-scrollbar {
-  @media only screen and (min-width: $tablet) {
-    width: 12px;
-  }
-}
-
-::-webkit-scrollbar-track {
-  @media only screen and (min-width: $tablet) {
-    border-radius: 8px;
-    box-shadow: inset 0 0 5px grey;
-  }
-}
-
-::-webkit-scrollbar-thumb {
-  @media only screen and (min-width: $tablet) {
-    background: rgb(110, 110, 110);
-    border-radius: 10px;
-
-    &:hover {
-      background: rgb(110, 110, 110);
-    }
-  }
 }
 
 /* VISUALLY HIDDEN */
